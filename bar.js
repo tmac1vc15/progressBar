@@ -1,7 +1,7 @@
-var indicator = angular.module('bar', []);
+var circleBar = angular.module('bar', []);
 
 
-indicator.directive('indicatorWidget', [function (){
+circleBar.directive('widget', [function (){
     return {
         restrict: 'A',
         replace: true,
@@ -63,11 +63,11 @@ indicator.directive('indicatorWidget', [function (){
     };
 }]);
 
-indicator.directive('innerPath', function(){
+circleBar.directive('innerPath', function(){
     return {
         restrict: 'A',
         transclude: true,
-        requires: 'indicatorWidget',
+        requires: 'widget',
         link: function(scope, element, attrs, ctrl){
             var arc = d3.select(element[0]),
                 innerArc = scope.innerArc(),
@@ -81,11 +81,11 @@ indicator.directive('innerPath', function(){
     };
 });
 
-indicator.directive('outerPath', function(){
+circleBar.directive('outerPath', function(){
     return {
         restrict: 'A',
         transclude: true,
-        requires: 'indicatorWidget',
+        requires: 'widget',
         link: function(scope, element, attrs){
             var arc = d3.select(element[0]),
                 innerArc = scope.outerArc();
