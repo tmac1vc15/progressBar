@@ -4,7 +4,7 @@
     <title>Progress Bar</title>
     <link href="bar.css" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.4/angular.min.js"></script>
-    <script src="d3.v3.min.js"></script> 
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 </head>
 
 
