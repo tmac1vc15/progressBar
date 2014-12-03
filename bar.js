@@ -25,9 +25,9 @@ indicator.directive('indicatorWidget', [function (){
             }
 
             $scope.findPathColor = function(){
-                return (diff < 0.25) ? 'all-good' :
-                        ((diff >= 0.25 && diff < 0.5) ? 'not-so-good' :
-                        'way-behind');
+                return (diff < 0.25) ? 'very-good' :
+                        ((diff >= 0.25 && diff < 0.5) ? 'ok' :
+                        'very-bad');
             };
 
             $scope.innerArc = function(){
@@ -71,9 +71,9 @@ indicator.directive('innerPath', function(){
         link: function(scope, element, attrs, ctrl){
             var arc = d3.select(element[0]),
                 innerArc = scope.innerArc(),
-                color = (scope.diff < 0.25) ? 'all-good' :
-                        ((scope.diff >= 0.25 && scope.diff < 0.5) ? 'not-so-good' :
-                        'way-behind');
+                color = (scope.diff < 0.25) ? 'very-good' :
+                        ((scope.diff >= 0.25 && scope.diff < 0.5) ? 'ok' :
+                        'very-bad');
 
             arc.attr('d', innerArc)
                 .attr("transform", "translate(75,75)");
