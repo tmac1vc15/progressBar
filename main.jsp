@@ -29,7 +29,7 @@
             width="150" height="150" 
             version="1.1" 
             xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50%" cy="50%" r="45" />
+            <circle cx="50" cy="50" r="50"></circle>
             
             <text class="progress-text actual" text-anchor="middle" alignment-baseline="middle" dx="48%" dy="45%">{{ actual_formatted }}</text>
             <text class="progress-text percent" text-anchor="start" alignment-baseline="middle" dx="58%" dy="47%">%</text>
