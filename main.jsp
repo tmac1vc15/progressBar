@@ -8,7 +8,7 @@
 </head>
 
 
-<body ng-app="indicator">
+<body ng-app="bar">
 
 <script type="text/javascript" src="bar.js"></script>
  
