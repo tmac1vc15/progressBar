@@ -13,13 +13,13 @@
 <script type="text/javascript" src="bar.js"></script>
  
  
-    <div class="widget-container"
+    <div class="container"
         data-expected="1.00"
         data-actual="0.75" indicator-widget></div>
-    <div class="widget-container"
+    <div class="container"
         data-expected="1.00"
         data-actual="0.50" indicator-widget></div>
-    <div class="widget-container"
+    <div class="container"
         data-expected="1.00"
         data-actual="0.25" indicator-widget></div>
     
